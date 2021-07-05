@@ -84,7 +84,7 @@
     top: -100%;
     position: fixed;
     left: 0;
-    height: 35vh;
+    height: 40vh;
     flex-direction: column;
   }
   .header__menu_navbar.active {
