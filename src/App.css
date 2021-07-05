@@ -1,9 +1,12 @@
- :root{
-    --mainColor: #28a745;
- }
- .app{
-     width: 100vw;
- }
- a,button,img{
-     user-select: none;
- }
+:root {
+  --mainColor: #28a745;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+a,
+button,
+img {
+  user-select: none;
+}
