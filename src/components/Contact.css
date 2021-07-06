@@ -1,7 +1,7 @@
 .contact{
     min-height: 100vh;
     width: 100%;
-    padding: 6rem;
+    padding: 10rem  5rem;
 
 }
 
@@ -71,6 +71,7 @@
 }
 
 .content .row2 .textArea textarea{
+    margin-top: 3rem;
     width: 100%;
     outline: none;
     border: none;
@@ -88,6 +89,7 @@
 
 .submitBtn{
     position: relative;
+  
 }
 
 .submitBtn .btn{
@@ -126,6 +128,18 @@
     .contact{
         padding: 4rem 3rem;
     }
+
+    .submitBtn{
+        position: relative;
+        height: 4rem;
+      
+    }
+
+    .contact .heading{
+        margin-top: 4rem;
+    }
+    
+
 
  
 }

@@ -1,0 +1,97 @@
+.structure{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10rem 5rem;
+}
+
+.structure .heading{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.structure .heading h1{
+    font-size: 5em;
+    color: #222;
+    font-weight: 400;
+}
+
+.structure .heading::before{
+    content: '';
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border: 4rem solid #EBF9F2;
+    border-radius: 50%;
+    z-index: -3;
+}
+
+.structure .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.structure .content .contentBx{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.structure .content .contentBx p{
+    max-width: 70rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2em;
+    color: #568193;
+    font-weight: 400;
+}
+
+
+.structure .content .cardBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row wrap;
+}
+
+.structure .content .cardBx .card{
+    width: 40rem;
+    height: 47rem;
+    border: .1rem solid red;
+    border-radius: .5rem;
+    background-color: #F2F6F7;
+}
+
+.structure .content .cardBx .card .card-header{
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3AC280;
+}
+
+.structure .content .cardBx .card .card-header h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.structure .content .cardBx .card .card-header p{
+    font-size: 2rem;
+    color: #fff;
+    display: grid;
+    place-items: center;
+
+}
+
+.structure .content .cardBx .card .card-body{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
