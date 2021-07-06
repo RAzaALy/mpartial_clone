@@ -29,7 +29,7 @@ const Contact = () => {
             </div>
 
             <div className="submitBtn">
-               <button className='btn' disabled>Submit</button>
+               <button className='btn' disabled={true}>Submit</button>
             </div>
 
         </div>

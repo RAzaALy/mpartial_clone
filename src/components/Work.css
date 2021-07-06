@@ -60,7 +60,7 @@
 .content .box .number::before{
     content: '';
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     left: -.3rem;
     width: 10rem;
     height: 10rem;
