@@ -1,5 +1,5 @@
 import React from "react";
-import './InfoSection.css';
+import "./InfoSection.css";
 const InfoSection = () => {
   return (
     <div className="section">

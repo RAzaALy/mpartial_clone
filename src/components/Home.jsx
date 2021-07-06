@@ -5,7 +5,6 @@ const Home = () => {
     <div className="home">
       <video
         src="./video/homepage.mp4"
-     
         loop
         autoPlay
         muted
