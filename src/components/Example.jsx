@@ -20,20 +20,18 @@ const Example = () => {
       </h1>
       <div className="container">
         <div className="box">
-          <canvas
-            className="webgl-canvas"
-            tabIndex="-1"
-            width="930"
-            height="480"
-          ></canvas>
+          <img
+            src="./images/sketch1.jpg"
+            alt="sketch"
+            style={{ width: "100%", height: "112rem", marginBottom: "2rem" }}
+          />
         </div>
         <div className="box">
-          <canvas
-            className="webgl-canvas"
-            tabIndex="-1"
-            width="930"
-            height="480"
-          ></canvas>
+          <img
+            src="./images/sketch1.jpg"
+            alt="sketch"
+            style={{ width: "100%", height: "112rem", marginBottom: "2rem" }}
+          />
         </div>
       </div>
 
@@ -61,8 +59,18 @@ const Example = () => {
         MATTERPORT TRUEPLAN™ FOR XACTIMATE™
       </h1>
       <div className="imgContainer">
-          <img  className="img" src="./images/img1.png" alt="img1" style={{width: "100%",marginBottom: '2rem',borderRadius: '2rem'}} />
-          <img  className="img" src="./images/img2.png" alt="img2"  style={{width: "100%",marginBottom: '2rem',borderRadius: '2rem'}}/>
+        <img
+          className="img"
+          src="./images/img1.png"
+          alt="img1"
+          style={{ width: "100%", marginBottom: "2rem", borderRadius: "2rem" }}
+        />
+        <img
+          className="img"
+          src="./images/img2.png"
+          alt="img2"
+          style={{ width: "100%", marginBottom: "2rem", borderRadius: "2rem" }}
+        />
       </div>
     </div>
   );
