@@ -11,9 +11,9 @@ const Home = () => {
         playsInline
         className="background_video"
       ></video>
-      <div className="slider">
+      <div className="slider"  >
         <div className="slider_btn"></div>
-      </div>
+      </div> 
     </div>
   );
 };

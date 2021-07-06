@@ -1,4 +1,5 @@
 import React from "react";
+import ReactCompareImage from "react-compare-image";
 import "./InfoSection.css";
 const InfoSection = () => {
   return (
@@ -21,36 +22,15 @@ const InfoSection = () => {
       </div>
       <div className="compare_panel">
         <div className="container">
-          <img
-            alt="pre-Mitigation"
-            data-testid="right-image"
-            className="right_image"
-            src="./images/right-image.jpeg"
-          ></img>
-          <img
-            alt="post-Mitigation"
-            data-testid="left-image"
-            className="right_image"
-            src="./images/left-image.jpeg"
-          ></img>
-          <div className="line_container">
-            <div className="line-up"></div>
-            <div className="arrow">
-              <img src="./images/arrow.png" alt="handle" loading="lazy" />
-            </div>
-            <div className="line-down"></div>
-          </div>
+          <ReactCompareImage
+            leftImage="./images/left-image.jpeg"
+            rightImage="./images/right-image.jpeg"
+            sliderLineColor="#3AC280"
+          />
+          ;
         </div>
-        <div dir="ltr" className="resize_sensor">
-          <div class="resize_sensor_expand">
-            <div className="box"></div>
-          </div>
-          <div class="resize_sensor_shrink">
-            <div className="box2"></div>
-          </div>
-        </div>
-        <div class="try_btn">
-          <button class="btn">Try Today</button>
+        <div className="try_btn">
+          <button className="btn">Try Today</button>
         </div>
       </div>
     </>

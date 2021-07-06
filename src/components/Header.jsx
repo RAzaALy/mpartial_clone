@@ -21,7 +21,7 @@ const Header = () => {
               <a
                 aria-current="page"
                 className="nav-link active"
-                href="/#Ground-Truth-Data"
+                href="./#Ground-Truth-Data"
               >
                 Ground-Truth Data
               </a>
