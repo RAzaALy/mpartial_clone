@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Work from "./components/Work";
 import Structure from "./components/Structure";
+import Example from "./components/Example";
 import "./App.css";
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <InfoSection />
       <Work />
       <Structure />
+      <Example />
       <Contact />
       <Footer />
     </div>
