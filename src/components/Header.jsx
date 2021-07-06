@@ -14,6 +14,7 @@ const Header = () => {
         <img src="./images/logo.png" alt="logo" />
       </div>
       <div>
+      {/* toggle the menu bar */}
         <ul className={`header__menu_navbar ${toggle ? "active" : "unactive"}`}>
           <li className="nav-item">
             <a
@@ -73,6 +74,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="toggle">
+      {/* toggle handler */}
         {toggle ? (
           <img
             className="toggle__btn"

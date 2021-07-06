@@ -4,6 +4,7 @@ import "./InfoSection.css";
 const InfoSection = () => {
   return (
     <>
+      {/* GROUND-TRUTH section  */}
       <div className="section">
         <div className="left_title">
           <h1 className="title">GROUND-TRUTH DATA EVERYONE TRUSTS</h1>
@@ -20,6 +21,7 @@ const InfoSection = () => {
           </p>
         </div>
       </div>
+      {/* compare image panel */}
       <div className="compare_panel">
         <div className="container">
           <ReactCompareImage
@@ -29,6 +31,7 @@ const InfoSection = () => {
           />
           ;
         </div>
+        {/* try out btn */}
         <div className="try_btn">
           <button className="btn">Try Today</button>
         </div>
