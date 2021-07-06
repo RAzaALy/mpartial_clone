@@ -31,7 +31,7 @@ const InfoSection = () => {
             alt="post-Mitigation"
             data-testid="left-image"
             className="right_image"
-            src="./images/right-image.jpeg"
+            src="./images/left-image.jpeg"
           ></img>
           <div className="line_container">
             <div className="line-up"></div>
@@ -48,6 +48,9 @@ const InfoSection = () => {
           <div class="resize_sensor_shrink">
             <div className="box2"></div>
           </div>
+        </div>
+        <div class="try_btn">
+          <button class="btn">Try Today</button>
         </div>
       </div>
     </>
