@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-rangeslider";
 import Tooltip from "@material-ui/core/Tooltip";
 import "react-rangeslider/lib/index.css";
@@ -7,12 +7,24 @@ import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import "./Structure.css";
 
 const Structure = () => {
-  var Slider = require("react-rangeslider");
+  const [volume, setVolume] = useState(0);
+  const handleOnChange = () => {
+    setVolume(volume + 1);
+  };
   return (
     <div className="structure">
       <div className="heading">
         <h1>Waterfall Fee Structure</h1>
       </div>
+      <Slider
+        className="slider"
+        value={volume}
+        min={0}
+        max={100}
+        orientation="horizontal"
+        onChange={handleOnChange}
+      />
+
       <div className="content">
         <div className="contentBx">
           <p>
@@ -41,15 +53,13 @@ const Structure = () => {
               </Tooltip>
             </div>
             <div className="card-body">
-              <h1>70.5%</h1>
+              <h1>7.22%</h1>
               <div className="properties">
                 <p>
-             
                   <CheckCircleOutlineIcon className="check" /> Access to
                   mpartial engine
                 </p>
                 <p>
-           
                   <CheckCircleOutlineIcon className="check" /> Minimum $750
                   initial deposit
                 </p>
@@ -75,7 +85,7 @@ const Structure = () => {
               </Tooltip>
             </div>
             <div className="card-body card-body2">
-              <h1>3.66%</h1>
+              <h1>4.72%</h1>
               <div className="properties">
                 <p>
                   <CheckCircleOutlineIcon className="check" /> Access to
