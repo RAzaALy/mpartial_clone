@@ -1,0 +1,27 @@
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 8rem;
+}
+.left_title{
+    width: 50%;
+    text-align: left;
+    align-self: flex-start;
+}
+.title{
+    font-weight: 600;
+    font-size: 5rem;
+}
+.right_content{
+    width: 50%;
+}
+.right_content{
+    margin-left: 3rem;
+
+}
+.description{
+    font-size: 1.6rem;
+    line-height: 2em;
+}

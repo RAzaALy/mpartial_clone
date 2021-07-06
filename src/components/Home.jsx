@@ -5,8 +5,7 @@ const Home = () => {
     <div className="home">
       <video
         src="./video/homepage.mp4"
-        width="1024"
-        height="571"
+     
         loop
         autoPlay
         muted
