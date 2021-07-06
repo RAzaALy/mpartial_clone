@@ -34,12 +34,19 @@ const InfoSection = () => {
             src="./images/right-image.jpeg"
           ></img>
           <div className="line_container">
-            <div className="line-up">
-            </div>
+            <div className="line-up"></div>
             <div className="arrow">
               <img src="./images/arrow.png" alt="handle" loading="lazy" />
             </div>
             <div className="line-down"></div>
+          </div>
+        </div>
+        <div dir="ltr" className="resize_sensor">
+          <div class="resize_sensor_expand">
+            <div className="box"></div>
+          </div>
+          <div class="resize_sensor_shrink">
+            <div className="box2"></div>
           </div>
         </div>
       </div>
