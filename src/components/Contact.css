@@ -1,0 +1,131 @@
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    padding: 6rem;
+
+}
+
+.contact .heading{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact .heading::before{
+    content: '';
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    border: 4rem solid #EBF9F2;
+    border-radius: 50%;
+    z-index: -3;
+}
+
+
+.contact .heading h1{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.content .row1{
+    width: 48%;
+}
+
+.content .row2{
+    width: 48%;
+
+}
+
+.content .inputBx{
+    position: relative;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.content .inputBx input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: .1rem solid #84A7B3;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 580;
+}
+
+
+
+.content .row2 .textArea{
+    position: relative;
+    width: 100%;
+}
+
+.content .row2 .textArea textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: .1rem solid #84A7B3;
+    min-height: 23rem;
+    resize: none;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+
+}
+
+::placeholder{
+    color:#707681;
+}
+
+.submitBtn{
+    position: relative;
+}
+
+.submitBtn .btn{
+    outline: none;
+    border: none;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.4rem;
+    font-weight: 450;
+    text-decoration: none;
+    background-color: #a4a7aa;
+    color: #fff;
+    border-radius: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.submitBtn .btn:hover{
+    opacity: .7;
+}
+
+
+@media (max-width : 768px) {
+    .content{
+        flex-direction: column;
+    }
+    .content .row1 , .content .row2{
+        width: 100%;
+    }
+
+
+    .contact{
+        padding: 4rem 3rem;
+    }
+
+ 
+}

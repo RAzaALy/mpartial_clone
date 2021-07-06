@@ -1,0 +1,32 @@
+.footer{
+    padding: 2.2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A5169;
+
+}
+
+.footer .copyright{
+    position: relative;
+}
+
+.footer .copyright p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer .socail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .socail .icon{
+    margin: 0rem 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
