@@ -76,6 +76,15 @@
   cursor: pointer;
   object-fit: contain;
 }
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  margin-top: 1rem !important;
+  text-transform: capitalize !important;
+  font-size: 1.3rem !important;
+}
 @media (max-width: 1199px) {
   .toggle {
     display: block;
@@ -87,6 +96,7 @@
     left: 0;
     height: 50vh;
     flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   .header__menu_navbar.active {
     top: 6rem;

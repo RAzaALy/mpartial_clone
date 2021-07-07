@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="home"  >
+    <div className="home" id="home">
       {/* background video */}
       <video
         src="./video/homepage.mp4"
