@@ -108,6 +108,7 @@ const Header = () => {
                 duration={800}
                 smooth={true}
                 key={index}
+                onClick={item.label === "Submission Portal" && handler}
               >
                 {item.label}
               </Link>
