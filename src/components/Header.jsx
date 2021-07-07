@@ -1,6 +1,34 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "./Header.css";
 const Header = () => {
+  const menuItems = [
+    {
+      path: "Ground-Truth-Data",
+      label: "Ground-Truth Data",
+    },
+    {
+      path: "#How-It-Works",
+      label: "How It Works",
+    },
+    {
+      path: "#Fee-Structure",
+      label: " Fee Structure",
+    },
+    {
+      path: "Example-Deliverables",
+      label: "Example Deliverables",
+    },
+    {
+      path: "order",
+      label: "Submission Portal",
+    },
+    {
+      path: "#Contact-US",
+      label: "Contact-US",
+    },
+  ];
+
   const [toggle, setToggle] = useState(false);
   const toggleMenu = () => {
     setToggle(true);
@@ -14,67 +42,34 @@ const Header = () => {
         <img src="./images/logo.png" alt="logo" />
       </div>
       <div>
-      {/* toggle the menu bar */}
+        {/* toggle the menu bar */}
         <ul className={`header__menu_navbar ${toggle ? "active" : "unactive"}`}>
+          {menuItems.map((item, index) => (
+            <li className="nav-item" key={index}>
+              <Link
+                activeClass="active"
+                className="nav-link active"
+                to={item.path}
+                spy={true}
+                offset={-70}
+                duration={800}
+                smooth={true}
+                key={index}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+
           <li className="nav-item">
-            <a
-              aria-current="page"
-              className="nav-link active"
-              href="./#Ground-Truth-Data"
-            >
-              Ground-Truth Data
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              aria-current="page"
-              className="nav-link active"
-              href="/#How-It-Works"
-            >
-              How It Works
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              aria-current="page"
-              className="nav-link active"
-              href="/#Fee-Structure"
-            >
-              Fee Structure
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              aria-current="page"
-              className="nav-link active"
-              href="/#Example-Deliverables"
-            >
-              Example Deliverables
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/order">
-              Submission Portal
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              aria-current="page"
-              className="nav-link active"
-              href="/#Contact-US"
-            >
-              Contact Us
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/login">
+            <Link to="/login">
               <button className="login_btn">Sign In</button>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="toggle">
-      {/* toggle handler */}
+        {/* toggle handler */}
         {toggle ? (
           <img
             className="toggle__btn"

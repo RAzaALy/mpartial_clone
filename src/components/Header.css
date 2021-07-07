@@ -40,6 +40,7 @@
   letter-spacing: 0;
   opacity: 1;
   transition: all 250ms ease-in;
+  cursor: pointer;
 }
 .header__menu_navbar .nav-item .nav-link:hover {
   color: var(--mainColor);

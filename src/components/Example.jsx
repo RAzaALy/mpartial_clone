@@ -23,14 +23,14 @@ const Example = () => {
           <img
             src="./images/sketch1.jpg"
             alt="sketch"
-            style={{ width: "100%", height: "112rem", marginBottom: "2rem" }}
+            // style={{ width: "100%", height: "112rem", marginBottom: "2rem" }}
           />
         </div>
         <div className="box">
           <img
             src="./images/sketch1.jpg"
             alt="sketch"
-            style={{ width: "100%", height: "112rem", marginBottom: "2rem" }}
+            // style={{ width: "100%", height: "112rem", marginBottom: "2rem" }}
           />
         </div>
       </div>

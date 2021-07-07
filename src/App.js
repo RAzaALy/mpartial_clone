@@ -16,7 +16,7 @@ const App = () => {
       <InfoSection />
       <Work />
       <Structure />
-      <Example />
+      <Example  id="#Example-Deliverables"/>
       <Contact />
       <Footer />
     </div>

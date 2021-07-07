@@ -24,7 +24,6 @@ const Structure = () => {
         orientation="horizontal"
         onChange={handleOnChange}
       />
-
       <div className="content">
         <div className="contentBx">
           <p>
