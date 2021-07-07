@@ -3,7 +3,7 @@ import Swiper from "./Swiper";
 import "./Example.css";
 const Example = () => {
   return (
-    <div className="work">
+    <div className="work" id="Example-Deliverables">
       <div className="heading">
         <h1>Example Deliverables</h1>
       </div>

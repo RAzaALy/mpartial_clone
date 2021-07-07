@@ -5,7 +5,7 @@ const InfoSection = () => {
   return (
     <>
       {/* GROUND-TRUTH section  */}
-      <div className="section">
+      <div className="section" id="Ground-Truth-Data">
         <div className="left_title">
           <h1 className="title">GROUND-TRUTH DATA EVERYONE TRUSTS</h1>
         </div>

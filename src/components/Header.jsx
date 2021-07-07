@@ -8,11 +8,11 @@ const Header = () => {
       label: "Ground-Truth Data",
     },
     {
-      path: "#How-It-Works",
+      path: "How-It-Works",
       label: "How It Works",
     },
     {
-      path: "#Fee-Structure",
+      path: "Fee-Structure",
       label: " Fee Structure",
     },
     {
@@ -24,7 +24,7 @@ const Header = () => {
       label: "Submission Portal",
     },
     {
-      path: "#Contact-US",
+      path: "Contact-US",
       label: "Contact-US",
     },
   ];
@@ -37,7 +37,7 @@ const Header = () => {
     setToggle(false);
   };
   return (
-    <div className="header">
+    <div className="header" id="home">
       <div className="header__logo">
         <img src="./images/logo.png" alt="logo" />
       </div>

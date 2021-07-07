@@ -12,7 +12,7 @@ const Structure = () => {
     setVolume(volume + 1);
   };
   return (
-    <div className="structure">
+    <div className="structure" id="Fee-Structure">
       <div className="heading">
         <h1>Waterfall Fee Structure</h1>
       </div>
