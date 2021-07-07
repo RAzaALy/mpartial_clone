@@ -48,7 +48,7 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  min-height: 90vh !important;
+  min-height: 40vh !important;
   overflow: hidden;
   display: block;
 }
@@ -94,7 +94,7 @@
 }
 @media (max-width: 768px) {
   .container {
-    height: 35rem;
+    height: 18rem;
   }
   .section {
     flex-direction: column;
@@ -116,5 +116,8 @@
   }
   .right_content {
     width: 100%;
+  }
+  .compare_panel {
+    padding: 2rem 3rem;
   }
 }

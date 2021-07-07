@@ -22,7 +22,7 @@ const Header = () => {
     },
     paper: {
       backgroundColor: theme.palette.background.paper,
-      border: "2px solid #7294DF",
+      border: "2px solid #30A26B",
       width: "40%",
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
@@ -113,7 +113,7 @@ const Header = () => {
               </Link>
             </li>
           ))}
-          {/* signup modal */}
+          {/* signIn modal */}
           <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
@@ -174,7 +174,7 @@ const Header = () => {
                     onClick={signup}
                     style={{ fontSize: "1.3rem", marginBottom: "1rem" }}
                   >
-                    Sign Up
+                    Sign In
                   </Button>
                 </form>
               </div>

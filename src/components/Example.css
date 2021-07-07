@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 150vh;
+  /* min-height: 150vh; */
 }
 
 .container .box {
@@ -49,18 +49,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-.imgCotnainer .img{
-    background: #fff;
-    border-radius: 2rem;
+.imgCotnainer .img {
+  background: #fff;
+  border-radius: 2rem;
 }
 
+@media (max-width: 1199px) {
+  .imgCotnainer {
+    flex-direction: column;
+  }
+}
 
-@media (max-width : 350px) {
-  .work{
+@media (max-width: 350px) {
+  .work {
     padding: 4rem 1rem;
   }
-  
 }
-

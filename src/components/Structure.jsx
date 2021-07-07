@@ -1,29 +1,67 @@
-import React, { useState } from "react";
-import Slider from "react-rangeslider";
+import React,{useState} from "react";
+import { makeStyles } from '@material-ui/core/styles';
+import Slider from '@material-ui/core/Slider';
 import Tooltip from "@material-ui/core/Tooltip";
-import "react-rangeslider/lib/index.css";
 import InfoIcon from "@material-ui/icons/InfoOutlined";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import "./Structure.css";
 
 const Structure = () => {
-  const [volume, setVolume] = useState(0);
-  const handleOnChange = () => {
-    setVolume(volume + 1);
-  };
+const [volume, setVolume] = useState();
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      width: "80vw",
+      marginTop: "12rem",
+    
+    },
+    margin: {
+      height: theme.spacing(3),
+    },
+  }));
+  const marks = [
+    {
+      value: 0,
+      label: '$0',
+    },
+    {
+      value: 25,
+      label: '$250,000',
+    },
+    {
+      value: 50,
+      label: '$500,000',
+    },
+    {
+      value: 75,
+      label: '$750,000',
+    },
+    {
+      value: 100,
+      label: '$1M+',
+    },
+  ];
+  
+  function valuetext(value) {
+    setVolume(value);
+    return `${value}°C`;
+  }
+  const classes = useStyles();
   return (
     <div className="structure" id="Fee-Structure">
       <div className="heading">
         <h1>Waterfall Fee Structure</h1>
       </div>
+   {/* range slider */}
+   <div className={classes.root}>
       <Slider
-        className="slider"
-        value={volume}
-        min={0}
-        max={100}
-        orientation="horizontal"
-        onChange={handleOnChange}
+        defaultValue={25}
+        getAriaValueText={valuetext}
+        aria-labelledby="discrete-slider-custom"
+        step={10}
+        valueLabelDisplay="auto"
+        marks={marks}
       />
+    </div>
       <div className="content">
         <div className="contentBx">
           <p>
@@ -52,7 +90,7 @@ const Structure = () => {
               </Tooltip>
             </div>
             <div className="card-body">
-              <h1>7.22%</h1>
+              <h1>{volume}.22%</h1>
               <div className="properties">
                 <p>
                   <CheckCircleOutlineIcon className="check" /> Access to
@@ -84,7 +122,7 @@ const Structure = () => {
               </Tooltip>
             </div>
             <div className="card-body card-body2">
-              <h1>4.72%</h1>
+              <h1>{volume}.72%</h1>
               <div className="properties">
                 <p>
                   <CheckCircleOutlineIcon className="check" /> Access to

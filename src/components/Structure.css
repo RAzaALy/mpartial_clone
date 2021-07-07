@@ -27,10 +27,6 @@
     border-radius: 50%;
     z-index: -3;
 }
-.slider{
-   margin-top: 12rem;
-   color: #0A5169 !important;
-}
 .structure .content{
     display: flex;
     justify-content: center;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Home.css";
 const Home = () => {
   return (
@@ -11,10 +12,21 @@ const Home = () => {
         muted
         playsInline
         className="background_video"
-      ></video>
+      >
+      </video>
       {/* slider btn */}
       <div className="slider">
-        <div className="slider_btn"></div>
+        <Link
+          activeClass="active"
+          className="nav-link active"
+          spy={true}
+          offset={-40}
+          duration={800}
+          smooth={true}
+          to="Ground-Truth-Data"
+        >
+          <div className="slider_btn"></div>
+        </Link>
       </div>
     </div>
   );
